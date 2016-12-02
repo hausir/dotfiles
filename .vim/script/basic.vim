@@ -3,6 +3,7 @@ syntax enable
 set list
 set paste
 set number
+set incsearch
 set expandtab
 set noswapfile
 
