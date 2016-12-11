@@ -91,5 +91,7 @@ export NVM_DIR="/Users/hausir/.nvm"
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
 export PYTHON_BUILD_MIRROR_URL="http://pyenv.qiniudn.com/pythons/"
 
+export PYENV_ROOT=/usr/local/var/pyenv
 if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv init -)"; fi
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 
