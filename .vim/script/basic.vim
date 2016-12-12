@@ -9,6 +9,7 @@ set noswapfile
 
 set tabstop=4
 set backspace=2
+set shiftwidth=4
 set laststatus=2
 set background=light
 set clipboard=unnamed
