@@ -52,7 +52,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions osx pip brew autojump pyenv python redis-cli celery gitigonre github node npm sublime sudo virtualenv)
+plugins=(git zsh-autosuggestions osx pip brew autojump pyenv python redis-cli celery gitigonre github node npm sublime sudo virtualenv docker docker-compose)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -97,3 +97,32 @@ if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -
 
 # autojump
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+
+# trash
+alias rm='trash'
+alias rl='trashlist'
+alias ur='undelfile'
+
+trash() {
+   mv $@  ~/.Trash/
+}
+
+trashlist() {
+   echo -e "1- Use 'cleartrash' to clear all garbages in ~/.trash!!!"
+   echo -e "2- Use 'ur' to mv the file in garbages to current dir!!!"
+   ls -al  ~/.Trash
+}
+
+undelfile() {
+   mv -i ~/.Trash/$@ ./
+}
+
+cleartrash() {
+   echo -ne "!!!Clear all garbages in ~/.trash, Sure?[y/n]"
+   read confirm
+   if [ $confirm == 'y' -o $confirm == 'Y' ] ;then
+      /bin/rm -rf ~/.Trash/*
+      /bin/rm -rf ~/.Trash/.* 2>/dev/null
+   fi
+}
+
