@@ -89,11 +89,6 @@ export NVM_DIR="/Users/hausir/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
-export PYTHON_BUILD_MIRROR_URL="http://pyenv.qiniudn.com/pythons/"
-
-export PYENV_ROOT=/usr/local/var/pyenv
-if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv init -)"; fi
-if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 
 # autojump
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
