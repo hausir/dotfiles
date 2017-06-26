@@ -52,7 +52,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions osx pip brew autojump pyenv python redis-cli node npm sudo virtualenv docker docker-compose ruby rails rvm bundler django httpie nmap nvm postgres rake rake-fast rsync ssh-agent supervisor svn svn-fast-info tmux yarn gem)
+plugins=(git zsh-autosuggestions osx pip brew autojump pyenv python redis-cli node npm sudo virtualenv docker docker-compose ruby rails rvm bundler django httpie nmap nvm postgres rake rake-fast rsync ssh-agent supervisor tmux yarn gem)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -85,10 +85,9 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export NVM_DIR="/Users/hausir/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
-export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # autojump
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
@@ -129,12 +128,12 @@ undelfile() {
 cleartrash() {
    echo -ne "!!!Clear all garbages in ~/.trash, Sure?[y/n]"
    read confirm
-   if [ $confirm == 'y' -o $confirm == 'Y' ] ;then
+   if [ $confirm = 'y' -o $confirm = 'Y' ] ;then
       /bin/rm -rf ~/.Trash/*
       /bin/rm -rf ~/.Trash/.* 2>/dev/null
    fi
 }
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
+export PATH="/usr/local/sbin:$PATH:$HOME/.rvm/bin"
 
