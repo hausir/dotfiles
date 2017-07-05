@@ -170,7 +170,7 @@
                             "optional": ["any"]
                         }
                     },
-                    "to": [{"key_code": "capslock"}]
+                    "to": [{"key_code": "caps_lock"}]
                 },
                 {
                     "type": "basic",

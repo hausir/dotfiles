@@ -38,6 +38,35 @@
                         ]
                     },
                     {
+                        "description": "Change left_shift to switch input if pressed alone",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "left_shift",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_shift"
+                                    }
+                                ],
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "spacebar",
+                                        "modifiers": [
+                                            "left_command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Fn+key to other key or symbol",
                         "manipulators": [
                             {
@@ -323,7 +352,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "capslock"
+                                        "key_code": "caps_lock"
                                     }
                                 ],
                                 "type": "basic"
