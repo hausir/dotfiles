@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>customSites</key>
+	<dict>
+		<key>503267F4-5856-4560-84B0-221AE81CEFF1</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>b</string>
+			<key>text</key>
+			<string>百度</string>
+			<key>url</key>
+			<string>https://www.baidu.com/s?wd={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>653EDF79-8E10-4B9D-8026-700688886C2C</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>fy</string>
+			<key>text</key>
+			<string>百度翻译</string>
+			<key>url</key>
+			<string>http://fanyi.baidu.com/#en/zh/{query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>7FE1DFF1-AA7D-4D69-9253-3332DD3A5D1F</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>sf</string>
+			<key>text</key>
+			<string>SegmentFault</string>
+			<key>url</key>
+			<string>https://segmentfault.com/search?q={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>F176BE63-2E0A-4810-A196-45BC90501CBB</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>gh</string>
+			<key>text</key>
+			<string>GitHub</string>
+			<key>url</key>
+			<string>https://github.com/search?utf8=✓&amp;q={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
