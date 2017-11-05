@@ -1,0 +1,211 @@
+{
+    "title": "Happy macro",
+    "rules": [
+        {
+            "description": "Little key input that can output a lot of character",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "u",
+                        "modifiers": {
+                            "mandatory": ["right_control"],
+                            "optional": ["any"]
+                        }
+                    },
+                    "to": [
+                        {"key_code": "3"},
+                        {"key_code": "1"},
+                        {"key_code": "7"},
+                        {"key_code": "0"},
+                        {"key_code": "3"},
+                        {"key_code": "5"},
+                        {"key_code": "4"},
+                        {"key_code": "3"},
+                        {"key_code": "6"}
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "i",
+                        "modifiers": {
+                            "mandatory": ["right_control"],
+                            "optional": ["any"]
+                        }
+                    },
+                    "to": [
+                        {"key_code": "1"},
+                        {"key_code": "8"},
+                        {"key_code": "6"},
+                        {"key_code": "0"},
+                        {"key_code": "3"},
+                        {"key_code": "3"},
+                        {"key_code": "2"},
+                        {"key_code": "2"},
+                        {"key_code": "0"},
+                        {"key_code": "6"},
+                        {"key_code": "7"}
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "o",
+                        "modifiers": {
+                            "mandatory": ["right_control"],
+                            "optional": ["any"]
+                        }
+                    },
+                    "to": [
+                        {"key_code": "1"},
+                        {"key_code": "7"},
+                        {"key_code": "7"},
+                        {"key_code": "6"},
+                        {"key_code": "1"},
+                        {"key_code": "1"},
+                        {"key_code": "9"},
+                        {"key_code": "5"},
+                        {"key_code": "7"},
+                        {"key_code": "5"},
+                        {"key_code": "0"}
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "p",
+                        "modifiers": {
+                            "mandatory": ["right_control"],
+                            "optional": ["any"]
+                        }
+                    },
+                    "to": [
+                        {"key_code": "1"},
+                        {"key_code": "3"},
+                        {"key_code": "0"},
+                        {"key_code": "6"},
+                        {"key_code": "3"},
+                        {"key_code": "1"},
+                        {"key_code": "1"},
+                        {"key_code": "9"},
+                        {"key_code": "9"},
+                        {"key_code": "0"},
+                        {"key_code": "0"},
+                        {"key_code": "6"},
+                        {"key_code": "0"},
+                        {"key_code": "4"},
+                        {"key_code": "0"},
+                        {"key_code": "4"},
+                        {"key_code": "1"},
+                        {"key_code": "5"}
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "j",
+                        "modifiers": {
+                            "mandatory": ["right_control"],
+                            "optional": ["any"]
+                        }
+                    },
+                    "to": [
+                        {"key_code": "h"},
+                        {"key_code": "a"},
+                        {"key_code": "u"},
+                        {"key_code": "s"},
+                        {"key_code": "i"},
+                        {"key_code": "r"}
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "k",
+                        "modifiers": {
+                            "mandatory": ["right_control"],
+                            "optional": ["any"]
+                        }
+                    },
+                    "to": [
+                        {"key_code": "k"},
+                        {"key_code": "u"},
+                        {"key_code": "a"},
+                        {"key_code": "n"},
+                        {"key_code": "g"},
+                        {"key_code": "e"},
+                        {"key_code": "r"}
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "l",
+                        "modifiers": {
+                            "mandatory": ["right_control"],
+                            "optional": ["any"]
+                        }
+                    },
+                    "to": [
+                        {"key_code": "o"},
+                        {"key_code": "i"},
+                        {"key_code": "o"},
+                        {"key_code": "v"},
+                        {"key_code": "o"},
+                        {"key_code": "i"},
+                        {"key_code": "o"}
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "m",
+                        "modifiers": {
+                            "mandatory": ["right_control"],
+                            "optional": ["any"]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "2",
+                            "modifiers": ["left_shift"]
+                        },
+                        {"key_code": "i"},
+                        {"key_code": "c"},
+                        {"key_code": "l"},
+                        {"key_code": "o"},
+                        {"key_code": "u"},
+                        {"key_code": "d"},
+                        {"key_code": "period"},
+                        {"key_code": "c"},
+                        {"key_code": "o"},
+                        {"key_code": "m"}
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "comma",
+                        "modifiers": {
+                            "mandatory": ["right_control"],
+                            "optional": ["any"]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "2",
+                            "modifiers": ["left_shift"]
+                        },
+                        {"key_code": "q"},
+                        {"key_code": "q"},
+                        {"key_code": "period"},
+                        {"key_code": "c"},
+                        {"key_code": "o"},
+                        {"key_code": "m"}
+                    ]
+                }
+            ]
+        }
+    ]
+}
