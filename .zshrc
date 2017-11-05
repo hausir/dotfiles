@@ -52,7 +52,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions osx pip brew autojump pyenv python redis-cli node npm sudo virtualenv docker docker-compose ruby rails rvm bundler django httpie nmap nvm postgres rake rake-fast rsync ssh-agent supervisor tmux yarn gem)
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions osx pip brew autojump pyenv python redis-cli node npm sudo virtualenv docker docker-compose ruby rails bundler django httpie nmap nvm postgres rake rake-fast rsync ssh-agent supervisor tmux yarn gem)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -135,5 +135,7 @@ cleartrash() {
 }
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="/usr/local/sbin:$PATH:$HOME/.rvm/bin"
+export PATH="/usr/local/sbin:$PATH:$HOME/.composer/vendor/bin"
+
+export HOMEBREW_GITHUB_API_TOKEN="b0654f915b01a4b854da2b302ce6be63cab59cc0"
 
